@@ -1,0 +1,33 @@
+.c-product-detail{
+    display: flex;
+    padding: 30px;
+    
+    &__left{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            width: 90%;
+            border-radius: 10px;
+        }
+    }
+    &__right{
+        width: 50%;
+        padding: 10px;
+    }
+}
+
+.p-rating .p-rating-item.p-rating-item-active .p-rating-icon {
+    color: yellow;
+}
+
+.c-product-content{
+    padding: 30px;
+    background: white;
+    div{
+        color: orange;
+        font-weight: 700;
+        font-size: 20px;
+    }
+}

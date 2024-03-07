@@ -1,0 +1,19 @@
+.c-login{
+    text-align: center;
+    &__header{
+        
+    }
+    label{
+        display: inline-block;
+    }
+    input{
+        min-width: 300px;
+    }
+}
+
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}

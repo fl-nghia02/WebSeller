@@ -1,0 +1,107 @@
+.c-layout{
+    position: relative;
+    z-index: 1;
+    background: rgb(228, 224, 224);
+    &__header{
+        position: fixed;
+        height: 50px;
+        background: orange;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 2%;
+        width: 100%;
+        z-index: 999;
+        &__left{
+            display: flex;
+            align-items: center;
+            .c-phone{
+                padding: 5px;
+                background: white;
+                border: 1px solid white;
+                border-radius: 50%;
+                margin-left: 20px;
+                margin-right: 10px;
+            }
+        }
+        &__right{
+            display: flex;
+            align-items: center;
+            input{
+                height: 35px;
+                width: 300px;
+                border: none;
+                border-radius: 5px;
+                margin-right: 10px;
+                padding-left:35px;
+                &:focus{
+                    outline: none;
+                }
+            }
+        }
+        
+    }
+    .c-layout__menu{
+        padding: 10px;
+        position: absolute;
+        z-index: 9999;
+        top: 50px;
+        bottom: 0;
+        left: 0;
+        width: 1px;
+        background: transparent;
+        &:hover{
+            width: 300px;
+            background: black;
+            transition: 0.5s;
+            .c-layout__menu__header{
+                display: block;
+            }
+            .c-layout__menu__content{
+                display: block;
+            }
+        }
+        &__header{
+            display: none;
+            margin-bottom: 20px;
+            span{
+                color: white;
+                font-size: 20px;
+                font-weight: 700;
+            }
+        }
+        &__content{
+            display: none;
+            a, span{
+                display: block;
+                color: white;
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
+
+.c-search{
+    position: relative;
+    z-index: 1;
+    i{
+        position: absolute;
+        z-index: 2;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .c-popup-search{
+        position: absolute;
+        z-index: 3;
+        left: 0;
+        top: 40px;
+        border-radius: 5px;
+        max-height: 500px;
+        overflow-y: scroll;
+        a{
+            &:hover{text-decoration: none !important;}
+        }
+    }
+}
